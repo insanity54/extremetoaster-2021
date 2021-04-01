@@ -11,7 +11,7 @@ RUN ls /usr/share/zoneinfo && \
 ADD https://www.google.com /time.now
 
 WORKDIR /extremetoaster
-COPY index.html node_modules .
+COPY index.html node_modules /extremetoaster/
 
 EXPOSE 8080
 
